@@ -1,3 +1,306 @@
+/* Base fonts */
+
 body {
-  display: block;
+  font-family: "poppins", Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #333;
+  line-height: 170%;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "neulis-neue", "poppins" Arial, sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 40px !important;
+  margin-bottom: 20px !important;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #1a1c40 !important;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #1a1c40 !important;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #00b8c3 !important;
+}
+h5 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #ff6c27 !important;
+}
+h6 {
+  color: #ff6c27 !important;
+  font-family: "poppins", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2.08px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+h6::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #ff6c27;
+  margin-right: 20px;
+}
+
+/* Links */
+a {
+  color: #00b8c3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 14px;
+}
+
+.body-content .main-event .event-info h1.long {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-nav > li > a {
+  font: normal 1em Barlow, sans-serif;
+
+  /* Style Site Search */
+}
+div.c-nav-centered__search > div {
+  color: #ffffff;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-color: #1a1c40;
+  border-style: solid;
+}
+#search-panel {
+  background: #fff;
+}
+#search-panel .form-group input.form-control.search-text {
+  border-style: none;
+}
+/* Center the logo container */
+.c-nav-centered__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the logo wrapper */
+.navbar__logo-wrapper {
+  display: inline-block;
+  text-align: center;
+}
+
+/* Resize the SVG image */
+.c-nav-navigation__img {
+  width: 222px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Footer Styling */
+.c-footer {
+  background-color: #1a1c40;
+  padding-top: 64px;
+}
+.c-footer,
+.c-footer p,
+.c-footer h4,
+.c-footer a,
+.c-footer__address,
+.c-footer__phone,
+.c-footer__copyright,
+.c-footer__h4,
+.c-footer__li--a,
+.c-footer__legal,
+.c-footer__novi-text {
+  color: #ffffff !important;
+}
+
+/* Add hover state for links */
+.c-footer__logo-wrapper img {
+  content: url("https://assets-staging.noviams.com/novi-file-uploads/asap/structure/asap_logo_white_crop.svg");
+  width: 162px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Button styles */
+.c-event-date-stub__btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #1a1c40;
+  border-color: #1a1c40;
+  font-size: 16px;
+}
+
+#about-association .container {
+  background-color: #fff;
+}
+
+.c-hp-about-association__p .btn.btn-primary {
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #1a1c40;
+  border-color: #1a1c40;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.c-hp-about-association__p .btn.btn-primary:hover {
+  background-color: #fff;
+  color: #1a1c40;
+  border: 2px solid #1a1c40;
+}
+.events.hidden-xs.hidden-sm {
+  background-color: #eff6f5;
+  padding: 20px;
+}
+.events-nav h2 {
+  text-align: left;
+  color: #1a1c40;
+}
+
+/* Events date */
+.c-event-date-stub__wrapper {
+  border-radius: 8px !important;
+  background-color: rgb(255, 255, 255) !important;
+  width: 110px !important; /* Set a specific size */
+  height: 110px !important; /* Same as width to make it square */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+#events .event .date-stub,
+#events .event .date-stub strong,
+.events .event .date-stub,
+.events .event .date-stub strong {
+  color: #ff7840 !important;
+}
+
+#events .event,
+.events .event {
+  border-bottom: 1px solid #bababa;
+  padding-top: 40px;
+}
+
+/* Event list information styling */
+
+.c-event-date-stub {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.c-event-date-stub__wrapper {
+  flex-shrink: 0 !important;
+}
+
+.c-event-date-stub__event-wrapper {
+  padding-left: 20px !important;
+  padding-top: 0px !important;
+}
+
+.c-event-date-stub__event-name {
+  color: black !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+}
+
+.c-event-date-stub__event-wrapper a {
+  color: inherit !important;
+}
+.c-event-date-stub__time {
+  display: inline-block !important;
+  margin-right: 5px !important; /* Add a small gap between them */
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px 8px; /* Adds some spacing inside */
+  display: inline-block; /* Ensures styling applies properly */
+  color: #ff6c27 !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.title.c-event-date-stub__event-wrapper a {
+  display: block; /* Ensures a line break after the <a> element */
+  margin-bottom: 8px; /* Adds spacing below */
+}
+
+.c-event-date-stub__btn {
+  margin-left: 20px !important;
+  display: inline-block !important;
+}
+
+.well blockquote,
+blockquote {
+  margin: 25px 0;
+  padding: 0 0 0 25px;
+  border-left: 5px solid #ff6c27;
+  border-color: #ff6c27;
+}
+
+.header-ribbon {
+  background-color: #1a1c40;
+  text-align: left;
+  padding: 20px 0;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-ribbon h1 {
+  margin: 100px 0;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  color: #fff !important;
 }
