@@ -1,3 +1,4 @@
+
 /* Base fonts */
 
 body {
@@ -15,14 +16,14 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "neulis-neue", "poppins" Arial, sans-serif;
+  font-family: "neulis-neue", "poppins", Arial, sans-serif;
 }
 
 h2,
 h3,
 h4,
 h5 {
-  margin-top: 40px !important;
+  margin-top: 60px !important;
   margin-bottom: 20px !important;
 }
 
@@ -83,6 +84,8 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #00b8c3;
+  font-weight: 500;
 }
 
 strong {
@@ -91,6 +94,23 @@ strong {
 
 small {
   font-size: 14px;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #ff6c27;
+  background-color: #ffeae0;
+  border-radius: 4px;
+}
+
+.inner-content {
+  padding-top: 100px;
+}
+
+.body-content,
+body {
+  background: none !important;
 }
 
 .body-content .main-event .event-info h1.long {
@@ -167,6 +187,41 @@ div.c-nav-centered__search > div {
 }
 
 /* Button styles */
+.btn.btn-primary {
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #1a1c40;
+  border: 2px solid #1a1c40;
+  font-size: 16px;
+}
+
+.btn.btn-primary:hover {
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #1a1c40;
+  border: 2px solid #1a1c40;
+  font-size: 16px;
+}
+
+.btn.btn-secondary {
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  color: #ff6c27;
+  border: none;
+  font-size: 16px;
+}
+
+.btn.btn-secondary:hover {
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #ff6c27;
+  color: #fff;
+  border-color: none;
+  font-size: 16px;
+}
+
 .c-event-date-stub__btn {
   padding: 15px 30px;
   border-radius: 8px;
@@ -280,10 +335,28 @@ div.c-nav-centered__search > div {
 
 .well blockquote,
 blockquote {
-  margin: 25px 0;
-  padding: 0 0 0 25px;
+  margin: 40px 0 !important;
+  padding: 0 0 0 40px !important;
   border-left: 5px solid #ff6c27;
   border-color: #ff6c27;
+  color: #001062;
+  font-size: 1.5rem;
+  line-height: 170%;
+}
+
+.primary-call-out,
+.secondary-call-out {
+  background-color: #eff6f5;
+  color: #333;
+  padding: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.secondary-call-out {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .header-ribbon {
@@ -303,4 +376,16 @@ blockquote {
   margin-right: auto;
   text-align: left;
   color: #fff !important;
+}
+
+
+/* mobile styles */
+
+
+@media only screen and (max-width: 480px) {
+  .c-nav-navigation__img {
+    width: 130px;
+    height: auto;
+    max-width: 100%;
+  }
 }
